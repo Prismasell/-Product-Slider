@@ -1,0 +1,62 @@
+<?xml version="1.0"?>
+<widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/widget_file.xsd">
+    <widget id="products_slider" class="Prismasell\Pslider\Block\Widget\Slider">
+        <label>Products Slider Widget</label>
+        <description>This widget displays a slider of selected products</description>
+        <parameters>
+            <parameter name="title" xsi:type="text" required="true">
+                <label>Slider Title</label>
+                <value>Featured Products</value>
+            </parameter>
+            <parameter name="limit" xsi:type="text" required="true">
+                <label>Number of Products</label>
+                <value>5</value>
+            </parameter>
+            <!-- Options to hide/show product information -->
+            <parameter name="show_name" xsi:type="select" required="true">
+                <label>Show Product Name</label>
+                <options>
+                    <option name="yes" value="1">
+                        <label>Yes</label>
+                    </option>
+                    <option name="no" value="0">
+                        <label>No</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="show_sku" xsi:type="select" required="true">
+                <label>Show Product SKU</label>
+                <options>
+                    <option name="yes" value="1">
+                        <label>Yes</label>
+                    </option>
+                    <option name="no" value="0">
+                        <label>No</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="show_price" xsi:type="select" required="true">
+                <label>Show Product Price</label>
+                <options>
+                    <option name="yes" value="1">
+                        <label>Yes</label>
+                    </option>
+                    <option name="no" value="0">
+                        <label>No</label>
+                    </option>
+                </options>
+            </parameter>
+            <parameter name="show_reviews" xsi:type="select" required="true">
+                <label>Show Product Reviews</label>
+                <options>
+                    <option name="yes" value="1">
+                        <label>Yes</label>
+                    </option>
+                    <option name="no" value="0">
+                        <label>No</label>
+                    </option>
+                </options>
+            </parameter>
+        </parameters>
+    </widget>
+</widgets>

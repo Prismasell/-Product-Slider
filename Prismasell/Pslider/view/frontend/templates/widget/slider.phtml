@@ -1,0 +1,31 @@
+<?php if ($block->getProductCollection()->getSize()): ?>
+<div class="product-slider">
+    <h2><?= $block->getData('title') ?></h2>
+    <div class="slider-content">
+        <?php foreach ($block->getProductCollection() as $product): ?>
+            <div class="slider-item">
+                <a href="<?= $product->getProductUrl() ?>">
+                    <img src="<?= $block->getImageUrl($product) ?>" alt="<?= $product->getName() ?>"/>
+                    <?php if ($block->showName()): ?>
+                        <h3><?= $product->getName() ?></h3>
+                    <?php endif; ?>
+
+                    <?php if ($block->showSku()): ?>
+                        <p>SKU: <?= $product->getSku() ?></p>
+                    <?php endif; ?>
+
+                    <?php if ($block->showPrice()): ?>
+                        <p>Price: <?= $block->getFormattedPrice($product) ?></p>
+                    <?php endif; ?>
+
+                    <?php if ($block->showReviews()): ?>
+                        <div class="reviews">
+                            <?= $block->getReviewsHtml($product) ?>
+                        </div>
+                    <?php endif; ?>
+                </a>
+            </div>
+        <?php endforeach; ?>
+    </div>
+</div>
+<?php endif; ?>
