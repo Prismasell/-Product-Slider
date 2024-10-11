@@ -88,6 +88,35 @@ Visit website: https://prismasell.com/
 or email at info@prismasell.com
 
 
+How to Include Products in the Slider
+The Prismasell Product Slider module allows you to choose specific products to display in the slider. You can easily select these products in the Magento admin panel by using the custom attribute added to each product.
+
+Step 1: Navigate to Product Management
+In your Magento Admin Panel, go to Catalog > Products.
+You’ll see a list of all your products. Choose the product you want to include in the slider by clicking on it to edit.
+Step 2: Locate the "Add to Slider" Attribute
+Once you're in the product edit page, scroll down or use the Attributes panel on the left to find the attribute Add to Slider.
+
+This attribute will be either a toggle button or a dropdown with Yes/No options.
+
+Step 3: Enable the Product for the Slider
+Set the Add to Slider attribute to Yes for each product you want to include in the slider.
+
+Once you've enabled the products, click Save in the top-right corner of the product page.
+
+Step 4: Save and Clear Cache (Optional)
+After adding products to the slider, you may need to clear the cache to see the updated slider on the frontend.
+
+You can clear the Magento cache using the following command:
+php bin/magento cache:flush
+
+Step 5: Verify on the Frontend
+Visit the page where you've placed the slider widget to verify that the products you enabled are now appearing in the slider.
+The products that you set with Add to Slider = Yes will now be displayed in the slider.
+Additional Information:
+Limit Products: You can control the number of products displayed in the slider by setting the Number of Products option in the widget configuration.
+
+Hide/Show Product Information: The slider allows you to show or hide product details like Name, SKU, Price, and Reviews. This can be configured within the widget settings.
 
 
 
